@@ -12,9 +12,9 @@ export function Product({name, price, image}){
         <h3 className="product-color">Colores:</h3>
       </section>
       <section className="product-unity">
-        <button className="minus-one-unity">-</button>
+        <button className="one-unity">-</button>
         <span>1 Unidad(es)</span>
-        <button className="add-one-unity">+</button>
+        <button className="one-unity">+</button>
       </section>
     </article>
   )

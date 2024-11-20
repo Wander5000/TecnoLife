@@ -29,6 +29,29 @@
   border-radius: 20px;
 }
 
+.product-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-unity{
+ 
+}
+
+.one-unity{
+  border: none;
+  background-color: #700b97;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.one-unity:hover{
+  cursor: pointer;
+  background-color: #550874;
+}
+
 .products-section{
   display: flex;
 }
