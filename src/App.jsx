@@ -1,5 +1,7 @@
 import './App.css'
 import { Product } from './components/ProductCard'
+import { Header } from './components/Header'
+import {Carrousel} from './components/Carrousel'
 
 export function App() {
 
@@ -24,6 +26,10 @@ export function App() {
 
   return (
     <>
+      <Header/>
+      <Carrousel/>
+      <hr/>
+      <h1>Algunos de nuestros Productos!</h1>
       <section className='products-section'>
       {Products.map(productinfo => {
             const {image, price, name} =  productinfo

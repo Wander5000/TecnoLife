@@ -1,3 +1,31 @@
+.entire-page-header{
+  display: flex;
+  padding: 15px;
+  padding-left: 50px;
+  border-radius: 500px;
+  background-color: #700b97;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.enterprise-logo{
+  color: #fff;
+}
+
+.carrousel-section{
+  display: flex;
+  justify-content: center;
+}
+
+.carrousel-body{
+  width: 90%;
+  height: 30pc;
+  border: 4px dashed#3e065f;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .product-card-body{
   border: 4px dashed #3e065f;
   border-radius: 20px;
@@ -13,6 +41,11 @@
 .product-name{
   text-align: center;
   color: #700b97;
+}
+
+.product-image-center{
+  display: flex;
+  justify-content: center;
 }
 
 .product-image-border{
@@ -31,7 +64,22 @@
 
 .product-info{
   display: flex;
+  text-align: center;
   flex-direction: column;
+}
+
+.product-unity{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.unities-on-cart{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .one-unity{
