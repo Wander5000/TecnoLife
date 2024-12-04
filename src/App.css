@@ -29,12 +29,16 @@ hr {
   color: #fff;
 }
 
+.bx.bx-search{
+  color: #fff;
+}
+
 .search-product-input{
   width: 500px;
   height: 50px;
   background-color: transparent;
   border: none;
-  border-bottom: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .page-links-list{
