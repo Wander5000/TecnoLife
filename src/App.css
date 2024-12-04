@@ -1,20 +1,60 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin-top: 30px;
+  height: 3px;
+  width: 95%;
+  background-color: #3e065f;
+}
+
+.sections-title{
+  text-align: center;
+}
+
 .entire-page-header{
   display: flex;
   padding: 15px;
   padding-left: 50px;
-  border-radius: 500px;
+
   background-color: #700b97;
   margin-bottom: 20px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .enterprise-logo{
   color: #fff;
 }
 
+.search-product-input{
+  width: 500px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: #fff;
+}
+
+.page-links-list{
+  display: flex;
+}
+
+.page-link{
+  color: #fff;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.page-link:hover{
+  cursor: pointer;
+}
+
 .carrousel-section{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .carrousel-body{
@@ -26,13 +66,32 @@
   margin-right: 20px;
 }
 
+.carrousel-slide{
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #3e065f;
+  border: none;
+}
+
+.carrousel-slide:hover{
+  cursor: pointer;
+}
+
+.products-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .product-card-body{
   border: 4px dashed #3e065f;
   border-radius: 20px;
   background-color: #f2f2f2;
   padding: 5px;
   margin: 10px;
-  width: 460px;
+  width: 400px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -96,6 +155,49 @@
   background-color: #550874;
 }
 
-.products-section{
+
+.about-section{
+  justify-content: center;
+  text-align: center;
+}
+
+.about-title{
+  color: #700b97;
+}
+
+.about-text-limitation{
+  width: 500px;
+}
+
+.page-footer{
+  background-color: #3e065f;
+  padding-top: 30px;
+  bottom: 0;
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-links-foot{
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+}
+
+.page-link-foot{
+  color: #fff;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.page-link-foot:hover{
+
+  cursor: pointer;
+}
+
+.rights-reserved{
+  color: #fff;
+  text-align: center;
 }
