@@ -12,6 +12,7 @@ hr {
 
 .sections-title{
   text-align: center;
+  color:#3e065f;
 }
 
 .entire-page-header{
@@ -68,6 +69,12 @@ hr {
   border-radius: 30px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.carrousel-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 26px;
 }
 
 .carrousel-slide{
@@ -161,6 +168,10 @@ hr {
 
 
 .about-section{
+  
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -169,8 +180,8 @@ hr {
   color: #700b97;
 }
 
-.about-text-limitation{
-  width: 500px;
+.about-text{
+  text-align: center;
 }
 
 .page-footer{

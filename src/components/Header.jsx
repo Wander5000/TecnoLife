@@ -13,7 +13,7 @@ export function Header(){
             </div>
             <div className="page-links">
                 <ul className="page-links-list">
-                    <Link to="Inicio" spy={true} smooth={true} duration={500} offset={-50}>
+                    <Link to="Inicio" spy={true} smooth={true} duration={500} offset={-150}>
                         <li className="page-link">Inicio</li>
                     </Link>
                     <Link to="Productos" spy={true} smooth={true} duration={500} offset={-50}>
