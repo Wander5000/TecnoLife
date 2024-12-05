@@ -6,7 +6,7 @@ export function Carrousel({images}){
     const [ActualImage, setImage] = useState(0);
 
     if(!Array.isArray(images) || imageQuantity === 0){
-        return;
+        return undefined;
     }
 
     const NextImg = () => {
@@ -22,7 +22,7 @@ export function Carrousel({images}){
             <button className="carrousel-slide" onClick={LastImg}> ◀ </button>
             <div className="carrousel-body">
                 {images.map((image, index) => {
-                    return( <>{ActualImage === index && (<img key={index} src={image} className="carrousel-image"/>)}</>)
+                    return( <>{ActualImage === index && (<img src={image} className="carrousel-image"/>)}</>)
                     })}
             </div>
             <button className="carrousel-slide" onClick={NextImg}> ▶ </button>
