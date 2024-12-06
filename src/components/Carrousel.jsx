@@ -2,7 +2,7 @@ import {React, useState} from "react";
 
 export function Carrousel({images}){
     
-    const imageQuantity= images?.length;
+    const imageQuantity= images.length;
     const [ActualImage, setImage] = useState(0);
 
     if(!Array.isArray(images) || imageQuantity === 0){
@@ -22,7 +22,9 @@ export function Carrousel({images}){
             <button className="carrousel-slide" onClick={LastImg}> ◀ </button>
             <div className="carrousel-body">
                 {images.map((image, index) => {
-                    return( <>{ActualImage === index && (<img src={image} className="carrousel-image"/>)}</>)
+                    return( <>
+                        {ActualImage === index && (<img src={image} className="carrousel-image"/>)}
+                      </>)
                     })}
             </div>
             <button className="carrousel-slide" onClick={NextImg}> ▶ </button>

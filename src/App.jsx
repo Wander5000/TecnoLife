@@ -56,12 +56,13 @@ export function App() {
       <Element name="Productos">
       <h1 className='sections-title'>Algunos de nuestros Productos!</h1>
       <section className='products-section'>
-        {products.map(({ _id, name, price, image }) => (
+        {products.map(({ _id, name, price, image, units}) => (
                     <Product
                         key={_id}
                         image={image}
                         name={name}
                         price={price}
+                        units={units}
                     />
                 ))
           }
@@ -87,7 +88,10 @@ export function App() {
       <hr />
       <h1 className='sections-title'>CRUD</h1>
       <Element name="CRUD">
-        <CRUD />
+        
+        <section className='crud-section'>
+          <CRUD />
+        </section>
       </Element>
       <Footer/>
     </>

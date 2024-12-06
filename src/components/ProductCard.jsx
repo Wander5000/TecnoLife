@@ -1,11 +1,15 @@
 import {React, useState} from "react";
 
-export function Product({name, price, image}){
+export function Product({name, price, image, units}){
 
   const [Qproduct, setQproduct] = useState(0);
 
   const AddOne = () => {
-    setQproduct(Qproduct + 1);
+    if(Qproduct >= units){
+      alert("Dame un respiro, no tengo tantas >:c");
+    }else{
+      setQproduct(Qproduct + 1);
+    };
   }
 
   const RemoveOne = () => {
@@ -27,7 +31,8 @@ export function Product({name, price, image}){
         </section>
       </header>
       <section className="product-info">
-        <h2 className="product-price">Precio por unidad: {price}$</h2>
+        <h2 className="product-price">Precio por unidad: ${price}</h2>
+        <h3>Unidades: {units}</h3>
       </section>
       <section className="product-unity">
         <button className="one-unity" onClick={RemoveOne}>-</button>

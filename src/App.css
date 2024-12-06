@@ -19,7 +19,6 @@ hr {
   display: flex;
   padding: 15px;
   padding-left: 50px;
-
   background-color: #700b97;
   margin-bottom: 20px;
   justify-content: space-between;
@@ -30,16 +29,29 @@ hr {
   color: #fff;
 }
 
+.search-product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bx.bx-search{
   color: #fff;
+  font-size: 30px;
 }
 
 .search-product-input{
   width: 500px;
   height: 50px;
+  color: #fff;
+  font-size: 30px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
+}
+
+.search-product-input::placeholder{
+  color: #fff;
 }
 
 .page-links-list{
@@ -182,6 +194,95 @@ hr {
 
 .about-text{
   text-align: center;
+}
+
+.new-product{
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 230px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #550874;
+  color: #fff;
+  font-weight: bold;
+}
+
+.crud-section{
+  display: grid;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.crud-table{
+  border-collapse: collapse;
+  border: 3px solid #3e065f;
+}
+
+.crud-table-head{
+  padding: 8px;
+  text-align: center;
+  background-color: #700b97;
+  color: white;
+}
+
+.crud-table-head.name{
+  width: 500px;
+}
+
+.crud-table-head.price{
+  width: 75px;
+}
+
+.crud-table-head.units{
+  width: 100px;
+}
+
+.crud-table-head.image{
+  width: 250px;
+}
+
+.crud-table-head.actions{
+  text-align: center;
+  width: 120px;
+}
+
+.crud-table-data{
+  padding: 10px;
+}
+
+.crud-table-data.center{
+  text-align: center;
+}
+
+.crud-table-data-actions{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-product{
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #e6bf12;
+  font-size: 20px;
+  color: #fff;
+}
+
+.delete-product{
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #ac0f0f;
+  font-size: 20px;
+  color: #fff;
+}
+
+.edit-product:hover , .delete-product:hover{
+  cursor: pointer;
 }
 
 .page-footer{

@@ -9,7 +9,7 @@ export function Header(){
                 <h1 className="enterprise-logo">TecnoLife</h1>
             </div>
             <div className="search-product">
-                <i className='bx bx-search'></i><input type="search" placeholder="Search for products" className="search-product-input"/>
+                <i class='bx bx-search' className='bx bx-search'></i><input type="search" placeholder="Search for products" className="search-product-input"/>
             </div>
             <div className="page-links">
                 <ul className="page-links-list">
